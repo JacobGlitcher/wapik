@@ -53,7 +53,7 @@ function throttle(fn, delay) {
   let lastCall = 0;
   return(...args) => {
     let context = this;
-    let = current = new Date().getTime();
+    let current = new Date().getTime();
 
     if(current - lastCall < delay) {
       return
